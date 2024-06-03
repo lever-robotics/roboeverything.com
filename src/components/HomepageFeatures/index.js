@@ -8,8 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        URDF Creator is designed to be easy to use for robotic developers. This documentation provides clear
+        instructions on how to use the tool to create URDF files for your robots.
       </>
     ),
   },
@@ -18,24 +18,25 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        URDF Creato lets you focus on what matters, the complexities of intellignet robotics.
+        By designing your tool here you can validate all aspects of the robot (parts, joints, sensors, etc.)
+        are all positioned and defined correctly before you start robot development.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Developed for ROS2',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        This application is used to assist in the development of robots for the Robot Operating System 2 (ROS2).
+        Export robot packages that are ready made to be built and run.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
