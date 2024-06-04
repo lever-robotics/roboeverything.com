@@ -6,6 +6,6 @@ sidebar_position: 2
 
 Links are the elements that define the shape and size of the robot. They are the building blocks of the robot and are connected by joints.
 
-![Joints](./img/links.png)
+![Joints](./img/link.png)
 
 

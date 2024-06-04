@@ -8,8 +8,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'URDF Documentation',
-  tagline: 'Build Robots in ROS2 Fast',
+  title: 'URDF Creator Documentation',
+  tagline: 'Build Robots Fast in ROS2',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -58,17 +58,17 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'ROS2 URDF Documentation',
+        title: 'URDF Creator',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/robot_arm2.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorials',
           },
         ],
       },
@@ -88,12 +88,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub Discussions',
+                href: 'https://github.com/marksoulier/urdf_documentation/issues',
               },
             ],
           },
@@ -101,12 +97,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/marksoulier/URDF_Creator',
               },
             ],
           },

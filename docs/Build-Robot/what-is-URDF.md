@@ -6,8 +6,6 @@ sidebar_position: 1
 
 This module covers what is the URDF (Uniform Robotics Description Format) and why it is important in the context of robotic development and ROS2.
 
-## What is the URDF?
-
 URDF (Unified Robot Description Format) is a file format for specifying the geometry and organization of robots in ROS
 
 
@@ -16,6 +14,5 @@ URDF's are made up of 2 basic elements Links and Joints. Links are the elements 
 
 Citations:
 
-D. Tola and P. Corke, "Understanding URDF: A Dataset and Analysis," in IEEE Robotics and Automation Letters, vol. 9, no. 5, pp. 4479-4486, May 2024, doi: 10.1109/LRA.2024.3381482.
-keywords: {Robots;Mathematical models;Collision avoidance;Visualization;Matlab;Kinematics;Service robots;Simulation and animation;kinematics;software tools for benchmarking and reproducibility},
+D. Tola and P. Corke, "Understanding URDF: A Dataset and Analysis," in IEEE Robotics and Automation Letters, vol. 9, no. 5, pp. 4479-4486, May 2024, doi: 10.1109/LRA.2024.3381482
 
