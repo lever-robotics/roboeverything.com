@@ -110,6 +110,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
 };
 
 export default config;

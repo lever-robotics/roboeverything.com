@@ -37,6 +37,11 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <section>
+          <div className="container">
+            <img src="/urdf_documentation/img/platform.png" alt="Platform" style={{ width: '100%', height: 'auto' }} />
+          </div>
+        </section>
       </main>
     </Layout>
   );
