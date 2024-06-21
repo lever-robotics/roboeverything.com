@@ -1,0 +1,23 @@
+.banner {
+    background-color: rgba(255, 255, 0, 0.2); /* Light yellow and mostly transparent */
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .banner h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+  }
+  
+  .banner p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+  }
+  
+  .banner .button {
+    background-color: rgba(255, 255, 0, 0.8); /* Light yellow */
+    color: black;
+  }
+  

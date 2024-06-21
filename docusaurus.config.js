@@ -15,8 +15,8 @@ const config = {
   // Set the production url of your site here
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  url: 'https://marksoulier.github.io',
-  baseUrl: '/urdf_documentation/',
+  url: 'https://roboeverything.com',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -49,6 +49,16 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-google-analytics',
+      {
+        trackingID: 'G-6VE18QWN8R', // Replace with your Google Analytics tracking ID
+        anonymizeIP: true, // Optional: Set to true to anonymize the IP addresses of your visitors
+      },
     ],
   ],
 
