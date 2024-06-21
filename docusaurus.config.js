@@ -35,6 +35,22 @@ const config = {
     locales: ['en'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ['@docusaurus/theme-mermaid',
+    'docusaurus-lunr-search',
+  ],
+
+  scripts: [
+    {
+      src: 'https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js',
+      'data-app-id': 'CDC108A1-CA11-4111-B086-0474C07C3D0F',
+      async: false,
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -46,7 +62,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/tailwind.scss')],
         },
       }),
     ],
@@ -60,6 +76,18 @@ const config = {
         anonymizeIP: true, // Optional: Set to true to anonymize the IP addresses of your visitors
       },
     ],
+    'docusaurus-plugin-sass',
+      async function tailwind(context, options) {
+        return {
+          name: 'docusaurus-tailwindcss',
+          configurePostCss(postcssOptions) {
+            // Appends TailwindCSS and AutoPrefixer.
+            postcssOptions.plugins.push(require('tailwindcss'))
+            postcssOptions.plugins.push(require('autoprefixer'))
+            return postcssOptions
+          },
+        }
+      },
   ],
 
   themeConfig:
@@ -72,6 +100,7 @@ const config = {
         logo: {
           alt: 'Logo',
           src: 'img/robot_arm2.svg',
+          srcDark: 'img/robot_arm2.svg',
         },
         items: [
           {
@@ -81,6 +110,11 @@ const config = {
             label: 'Tutorials',
           },
         ],
+      },
+      colorMode: {
+        defaultMode: 'dark', // Set the default mode to 'dark'
+        disableSwitch: false, // Optional: if you want to disable the switch
+        respectPrefersColorScheme: false, // Set this to false to ignore the user's system preference
       },
       footer: {
         style: 'dark',

@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-doc-markdown a:not(.no-effect), .fancy-link {
+    @apply no-underline bg-gradient-to-r from-primary-600 to-primary-600 bg-no-repeat bg-left-bottom 
+    bg-0w hover:bg-100w hover:text-primary-600 duration-300 w-fit dark:text-primary-600 text-primary-600 transition-all font-medium;
+}
+
+.theme-doc-markdown {
+
+  h1,
+  header h1 {
+    @apply text-3xl font-bold text-primary-600;
+    @apply mt-4 mb-4;
+  }
+
+  h2 {
+    @apply text-2xl font-bold text-primary-600;
+    @apply mt-8 mb-4;
+  }
+
+  h3 {
+    @apply text-xl font-bold text-primary-600;
+    @apply mt-6 mb-4;
+  }
+
+  h4 {
+    @apply text-lg font-bold text-primary-600;
+    @apply mt-5 mb-4;
+  }
+
+  h5 {
+    @apply  font-bold text-primary-600;
+    @apply mt-4 mb-4;
+  }
+
+  h6 {
+    @apply text-primary-600;
+    @apply mt-4 mb-3;
+  }
+
+  pre {
+    @apply text-xs;
+    @apply p-1 m-1;
+  }
+  
+  code {
+    @apply text-xs;
+    @apply p-1 m-0;
+  }
+
+  img:not(.no-effect) {
+    margin: 6px;
+  }
+
+  .hash-link {
+    @apply hover:text-current p-0 ml-2 from-current to-current text-neutral-500;
+  }
+
+  ul {
+    @apply list-disc ml-8;
+  }
+
+  ol {
+    @apply list-decimal ml-8;
+  }
+}
+
+.navbar {
+  @apply p-4 bg-transparent h-fit shadow-none;
+
+  &__inner {
+    @apply backdrop-blur-md dark:bg-neutral-900/40 bg-neutral-400/40 h-fit p-3 rounded-full shadow-xl outline outline-2 outline-neutral-500/10;
+  }
+
+  &--fixed-top {
+    @apply w-full fixed;
+  }
+
+  &__search-input {
+	@apply bg-neutral-600/50 focus-visible:outline-primary-500 focus-visible:outline-2 focus-visible:outline #{!important}
+  }
+}
+
+.container {
+  @apply pt-24 #{!important};
+}
+
+.breadcrumbs {
+  @apply flex flex-row items-center;
+  &__item {
+    @apply flex h-fit items-center;
+
+    .breadcrumbs__link:hover {
+      @apply bg-primary-500/10;
+    }
+  }
+
+  &__item--active {
+    .breadcrumbs__link {
+      @apply bg-primary-500/20 font-semibold text-primary-600;
+    }
+
+    .breadcrumbs__link:hover {
+      @apply bg-primary-600/20;
+    }
+  }
+}
+
+aside.theme-doc-sidebar-container > div {
+  @apply h-fit pt-20 #{!important};
+}
+
+.theme-doc-sidebar-container {
+  @apply border-none #{!important};
+}
+
+nav.menu.thin-scrollbar {
+  @apply p-4 pb-12 h-fit;
+}
+
+.theme-doc-sidebar-menu {
+  @apply bg-neutral-500/10 p-2 rounded-xl shadow-xl z-50 static;
+}
+
+.menu {
+  &__link {
+    @apply rounded-lg border-l-4 border-transparent;
+
+    &:hover {
+      @apply bg-primary-500/20;
+    }
+
+    &--active {
+      @apply bg-primary-500/30 dark:text-primary-600 text-primary-600 #{!important};
+    }
+
+    &--sublist {
+      @apply bg-transparent border-transparent;
+    }
+  }
+
+  &__list {
+    @apply pb-1;
+
+    &-item {
+      @apply border-primary-500 mb-2;
+
+      &--collapsed {
+        @apply border-transparent bg-transparent;
+      }
+
+      &-collapsible {
+        @apply rounded-lg -ml-1;
+
+        &:hover {
+          @apply bg-primary-500/10;
+        }
+
+        &--active {
+          @apply bg-primary-500/30 #{!important};
+
+          &:hover {
+            @apply bg-primary-500/20;
+          }
+        }
+      }
+    }
+  }
+
+  &__caret {
+    @apply rounded-lg;
+
+    &:hover {
+      @apply bg-primary-500/10;
+    }
+  }
+}
+
+.theme-doc-sidebar-item-category-level-1 {
+  @apply border-l-4 duration-300 rounded-lg bg-neutral-400/5;
+}
+
+/* table of contents */
+
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-styles-module, .sidebar_njMd {
+	@apply overflow-y-visible pt-0 max-h-[90vh] #{!important};
+}
+
+.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module, .menu_SIkG {
+  @apply pt-0 pb-4 px-4 sticky;
+}
+
+.table-of-contents {
+  @apply bg-neutral-500/5 p-2 rounded-xl shadow-xl border-none relative;
+
+  &__link--active {
+    @apply font-semibold tracking-[-0.15px];
+  }
+}
+
+.grid-card {
+  @apply rounded-2xl bg-gray-900 p-4 border-t-4 border-primary-500;
+
+  p + p {
+    @apply mt-2;
+  }
+}
+
+.cardContainer_src-theme-DocCard-styles-module {
+	@apply border-0 border-l-4 border-transparent p-3 duration-300 #{!important};
+}
+
+.cardContainer_src-theme-DocCard-styles-module:hover {
+	@apply border-primary-500 bg-primary-500/20 #{!important};
+}
+
+.cardTitle_src-theme-DocCard-styles-module {
+	@apply mb-2 text-base font-bold #{!important};
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 10px #000000;
+}
+

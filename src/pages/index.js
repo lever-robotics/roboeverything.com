@@ -18,7 +18,7 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-            <div style={{ marginBottom: '20px' }}> {/* Wrap the first link in a div and add bottom margin */}
+            <div style={{ margin: '20px' }}> {/* Wrap the first link in a div and add bottom margin */}
               <Link
                 className="button button--secondary button--lg"
                 to="/docs/intro">
@@ -44,6 +44,9 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
+      <div style={{ margin: '50px' }}>
+        {/* Add content here */}
+      </div>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
