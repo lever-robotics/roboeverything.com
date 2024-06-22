@@ -43,10 +43,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <div style={{ margin: '50px' }}>
-        {/* Add content here */}
-      </div>
+      description="URDF Creator">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

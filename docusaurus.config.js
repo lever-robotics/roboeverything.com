@@ -94,7 +94,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/RoboEverything.png',
+      metadata: [{ name: 'description', content: 'URDF Creator Documentation' }],
       navbar: {
         title: 'URDF Creator',
         logo: {

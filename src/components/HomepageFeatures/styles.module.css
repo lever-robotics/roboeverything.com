@@ -9,3 +9,10 @@
   height: 200px;
   width: 200px;
 }
+
+
+.heading-large {
+  font-size: 32px; /* Example size, adjust as needed */
+  font-weight: bold;
+  /* Add any other styles you want for your large heading */
+}
