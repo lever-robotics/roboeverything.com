@@ -18,8 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        URDF Creato lets you focus on what matters, the complexities of intellignet robotics.
-        By designing your tool here you can validate all aspects of the robot (parts, joints, sensors, etc.)
+        URDF Creator lets you focus on what matters, the complexities of intellignet robotics.
+        By designing your robot model here you can validate all aspects of the robot (parts, joints, sensors, etc.)
         are all positioned and defined correctly before you start robot development.
       </>
     ),
@@ -30,7 +30,7 @@ const FeatureList = [
     description: (
       <>
         This application is used to assist in the development of robots for the Robot Operating System 2 (ROS2).
-        Export robot packages that are ready made to be built and run.
+        Export robot description packages that are ready made to be built and run.
       </>
     ),
   },

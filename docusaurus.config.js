@@ -97,7 +97,7 @@ const config = {
       image: 'img/RoboEverything.png',
       metadata: [{ name: 'description', content: 'URDF Creator Documentation' }],
       navbar: {
-        title: 'URDF Creator',
+        title: 'RoboEverything',
         logo: {
           alt: 'Logo',
           src: 'img/robot_arm2.svg',
@@ -108,7 +108,17 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorials',
+            label: 'Quick Start',
+          },
+          {
+            to: '/download', // This path should match the path where your React component is rendered
+            label: 'Download',
+            position: 'left',
+          },
+          {
+            to: '/developer', // This path should match the path where your React component is rendered
+            label: 'Developer',
+            position: 'left',
           },
         ],
       },
@@ -124,8 +134,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Quick Start',
+                to: '/docs/quick-start',
               },
             ],
           },

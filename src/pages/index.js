@@ -21,8 +21,8 @@ function HomepageHeader() {
             <div style={{ margin: '20px' }}> {/* Wrap the first link in a div and add bottom margin */}
               <Link
                 className="button button--secondary button--lg"
-                to="/docs/intro">
-                Start with Tutorials
+                to="/docs/quick-start">
+                Quick Start
               </Link>
             </div>
             <div style={{ marginTop: '20px' }}> {/* Keep the second link wrapped in a div for consistency */}
@@ -48,17 +48,18 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <BetaBanner />
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '150px'}}>
-          <iframe
-            width="1600"
-            height="900"
-            src="https://www.youtube.com/embed/cG2rHluZv3Y?si=mZ_DNSQrA7haZeed"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '150px' }}>
+          <div style={{ position: 'relative', width: '100%', maxWidth: '1600px', paddingBottom: '56.25%', maxHeight: '900px' /* 16:9 aspect ratio with max height */ }}>
+            <iframe
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '80%' }}
+              src="https://www.youtube.com/embed/cG2rHluZv3Y?si=mZ_DNSQrA7haZeed"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <section>
           <div className="container" style={{ marginBottom: '20px' }}> {/* Add margin bottom to the container */}
