@@ -45,9 +45,11 @@ const config = {
 
   scripts: [
     {
-      src: 'https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js',
-      'data-app-id': 'CDC108A1-CA11-4111-B086-0474C07C3D0F',
-      async: false,
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-6VE18QWN8R',
+      async: true,
+    },
+    {
+      src: '/scripts/ga.js',
     },
   ],
 
