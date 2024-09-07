@@ -8,6 +8,12 @@
     /* Ensure equal spacing between the two halves */
   }
 
+@media (max-width: 600px) {
+    .advertiseContainer {
+        flex-direction: column;
+    }
+}
+
 /* Page-breaking line at the top */
 .pageBreakLine {
     width: 50%; /* Only part of the container's width */
@@ -30,13 +36,13 @@
   }
   
   .title {
-    font-size: 5.0rem;
+    font-size: 5.0vw;
     font-weight: bold;
     margin-bottom: 1rem;
   }
   
   .subtitle {
-    font-size: 1.25rem;
+    font-size: 3vw;
     color: #8f8d8d;
     margin-bottom: 2rem;
   }
