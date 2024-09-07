@@ -1,0 +1,47 @@
+/* Container for the header */
+.header-container {
+    padding: 2rem 0; /* Add padding to the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+/* Gradient styling for "Robo" */
+.robo-gradient {
+    background: linear-gradient(90deg, #c47cff, #646cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Left section for title and subtitle */
+  .left-section {
+    width: 60%; /* Adjust width to 50% */
+  }
+  
+  .title {
+    font-size: 7vw; /* Adjust font size based on viewport width */
+    font-weight: bold;
+    text-align: center;
+    color: #2d3748; /* Equivalent to Tailwind's text-gray-800 */
+  }
+  
+  .subtitle {
+    margin-top: 4.0rem;
+    font-size: 3vw; /* Adjust font size */
+    text-align: center;
+    color: #ffffff; /* Equivalent to Tailwind's text-gray-600 */
+  }
+  
+  /* Right section for image */
+/* Right section for image */
+.right-section {
+    width: 40%; /* Adjust width to 50% */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    padding-top: 50px;
+}
+  
+  /* Image styling with transformation */
+  .image-transform {
+    transform: translateX(20%) translateY(0%); /* Move image partly off-screen */
+  }

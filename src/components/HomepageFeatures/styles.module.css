@@ -4,12 +4,15 @@
   padding: 2rem 0;
   width: 100%;
 }
-
+.featureSvgContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
 .featureSvg {
   height: 200px;
   width: 200px;
 }
-
 
 .heading-large {
   font-size: 32px; /* Example size, adjust as needed */

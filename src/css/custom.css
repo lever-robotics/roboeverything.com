@@ -5,7 +5,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #14252e;
+  font-family: Arial, Helvetica, sans-serif;
+
+  --ifm-color-primary: #646cff;
   /* Navy blue */
   --ifm-color-primary-dark: #000036;
   /* Darker navy blue */
@@ -25,7 +27,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #5c7887;
+  --ifm-color-primary: #646cff;
   /* Navy blue */
   --ifm-color-primary-dark: #000070;
   /* Darker navy blue */

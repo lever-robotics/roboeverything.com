@@ -18,3 +18,6 @@ As a review in this section you learned:
 
 Next we will go into best pactices for modeling diffrent types of robots.
 
+:::tip
+This is a tip
+:::

@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'URDF Creator Documentation',
+  title: 'RoboEverything',
   tagline: 'Build Robots Fast in ROS2',
   favicon: 'img/favicon.ico',
 
@@ -52,6 +52,23 @@ const config = {
       src: '/scripts/ga.js',
     },
   ],
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon.ico', // Default favicon
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/img/favicon-dark.ico',
+        media: '(prefers-color-scheme: dark)', // Favicon for dark mode
+      },
+    },
+  ],
 
   presets: [
     [
@@ -71,13 +88,13 @@ const config = {
   ],
 
   plugins: [
-    [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-6VE18QWN8R', // Replace with your Google Analytics tracking ID
-        anonymizeIP: true, // Optional: Set to true to anonymize the IP addresses of your visitors
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-google-analytics',
+    //   {
+    //     trackingID: 'G-6VE18QWN8R', // Replace with your Google Analytics tracking ID
+    //     anonymizeIP: true, // Optional: Set to true to anonymize the IP addresses of your visitors
+    //   },
+    // ],
     'docusaurus-plugin-sass',
       async function tailwind(context, options) {
         return {
@@ -103,7 +120,7 @@ const config = {
         logo: {
           alt: 'Logo',
           src: 'img/robot_arm2.svg',
-          srcDark: 'img/robot_arm2.svg',
+          srcDark: 'img/robot_arm2_white.svg',
         },
         items: [
           {

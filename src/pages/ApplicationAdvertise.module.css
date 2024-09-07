@@ -1,0 +1,93 @@
+/* Main container to split the sections */
+.advertiseContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 400px;
+    /* Ensure equal spacing between the two halves */
+  }
+
+/* Page-breaking line at the top */
+.pageBreakLine {
+    width: 50%; /* Only part of the container's width */
+    height: 2px;
+    background-color: #646cff;
+    border: none;
+    margin-bottom: 10rem; /* Space between the line and the content */
+    margin-top: 4rem; /* Space between the line and the content */
+    align-self: center; /* Center the line within the container */
+  }
+  
+  /* Left Section: Text and Buttons */
+  .textSection {
+    width: 50%; /* Take half the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 5.0rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #8f8d8d;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .buttons a {
+    padding: 0.75rem 1.5rem;
+    background-color: #1d2a31;
+    color: #fff;
+  }
+
+  .buttons a:hover {
+    background-color: #646cff;
+  }
+
+  .buttons {
+    display: flex;
+  }
+  
+  /* Right Section: Image with hover effect */
+  .imageSection {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageContainer {
+    width: 90%;
+    height: auto;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageContainer:hover {
+    transform: scale(1.1); /* Enlarge the container on hover */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

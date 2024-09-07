@@ -6,37 +6,73 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import BetaBanner from './betaBanner';
 
 import Heading from '@theme/Heading';
-import styles from './index.module.css';
+// import styles from './index.module.css';
+import styles from './ApplicationAdvertise.module.css'; // Import the CSS module
+import './header.css'; // Link to your custom CSS
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-      <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-            <div style={{ margin: '20px' }}> {/* Wrap the first link in a div and add bottom margin */}
-              <Link
-                className="button button--secondary button--lg"
-                to="/docs/quick-start">
-                Quick Start
-              </Link>
-            </div>
-            <div style={{ marginTop: '20px' }}> {/* Keep the second link wrapped in a div for consistency */}
-              <Link
-                className="button button--secondary button--lg"
-                to="https://marksoulier.github.io/URDF_creator/">
-                Go to App
-              </Link>
-            </div>
-          </div>
+    <header className="header"> {/* Apply custom class here */}
+      <div className="header-container">
+        
+        <div className="left-section">
+          <h1 className="title">
+          <span className="robo-gradient">RoboEverything</span>
+          </h1>
+          <p className="subtitle text-lightModeBlack dark:text-white">
+            Beautiful developer tools for ROS2
+          </p>
+        </div>
+
+        <div className="right-section">
+          <img
+            src="img/front_abstract.png"
+            alt="App Preview"
+            className="image-transform" 
+          />
+        </div>
       </div>
     </header>
   );
 }
+
+
+function ApplicationAdvertise() {
+  return (
+    <div className={styles.advertiseContainer}>
+      {/* Left Section: Title, Subtitle, and Buttons */}
+      <div className={styles.textSection}>
+        <h1 className={styles.title}>URDF Creator</h1>
+        <p className={styles.subtitle}>
+          Build robot models effortlessly and free with URDF Creator.
+        </p>
+        <div className={styles.buttons}>
+          <Link className="button button--lg" to="https://marksoulier.github.io/URDF_creator/">
+            Go to App
+          </Link>
+        </div>
+      </div>
+      {/* Right Section: Image with rounded container */}
+      <div className={styles.imageSection}>
+      <Link to="https://marksoulier.github.io/URDF_creator/">
+        <div className={styles.imageContainer}>
+          <img
+            src="img/tool.png" // Replace with your image path
+            alt="Robot Preview"
+            className={styles.image}
+          />
+        </div>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+// "          <Link className="button button--lg" to="/docs/quick-start">
+//             Quick Start
+//           </Link>"
+//           "
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -45,6 +81,9 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="URDF Creator">
       <HomepageHeader />
+      <hr className={styles.pageBreakLine} />
+      <ApplicationAdvertise />
+      <hr className={styles.pageBreakLine} />
       <main>
         <HomepageFeatures />
         <BetaBanner />
