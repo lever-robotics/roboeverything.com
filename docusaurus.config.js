@@ -127,7 +127,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Quick Start',
+            label: 'Docs',
           },
           {
             to: '/download', // This path should match the path where your React component is rendered
