@@ -56,6 +56,13 @@ const config = {
     {
       tagName: 'link',
       attributes: {
+        href: 'https://fonts.googleapis.com/css?family=Comfortaa',
+        rel: 'stylesheet',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
         rel: 'icon',
         href: '/img/favicon.ico', // Default favicon
       },
@@ -162,6 +169,10 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'Discord',
+                href: 'https://discord.gg/F42V44qxwR',
+              },
+              {
                 label: 'GitHub Discussions',
                 href: 'https://github.com/marksoulier/urdf_documentation/issues',
               },
@@ -177,7 +188,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} URDF Documentation, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -1,6 +1,6 @@
 {
   "label": "Defining the URDF",
-  "position": 3,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "This section takes you through understanding all the URDF parameters."

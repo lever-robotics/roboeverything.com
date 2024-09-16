@@ -29,7 +29,7 @@
 [data-theme='dark'] {
   --ifm-color-primary: #646cff;
   /* Navy blue */
-  --ifm-color-primary-dark: #000070;
+  --ifm-color-primary-dark: #ffffff;
   /* Darker navy blue */
   --ifm-color-primary-darker: #000060;
   /* Even darker navy blue */
@@ -50,6 +50,7 @@
   color: #ffffff;
   /* White text for hero section */
 }
+
 
 [data-theme="light"] img[src$="#gh-dark-mode-only"],
 [data-theme="dark"] img[src$="#gh-light-mode-only"] {

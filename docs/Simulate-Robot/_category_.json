@@ -1,0 +1,8 @@
+{
+  "label": "Simulating the Robot",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "This section focuses on the foundational concepts of simulating a robot that you designed in ROS."
+  }
+}

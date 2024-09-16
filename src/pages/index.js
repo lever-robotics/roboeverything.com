@@ -15,16 +15,17 @@ function HomepageHeader() {
   return (
     <header className="header"> {/* Apply custom class here */}
       <div className="header-container">
-        
         <div className="left-section">
+        <div className="title-container">
           <h1 className="title">
-          <span className="robo-gradient">RoboEverything</span>
+            <span className="robo-gradient">RoboEverything</span>
           </h1>
+          <span className="by-lever text-lightModeBlack dark:text-white"><span className="by">by </span><span className="lever-gradient"><span className="L">L</span>EVER</span></span>
+        </div>
           <p className="subtitle text-lightModeBlack dark:text-white">
             Beautiful developer tools for ROS2
           </p>
         </div>
-
         <div className="right-section">
           <img
             src="img/front_abstract.png"

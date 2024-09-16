@@ -68,12 +68,6 @@ export default function VersionInfo() {
               </svg>
               <p>
                 This page applies to versions before <span className="text-[--ifm-color-danger-dark] font-bold">{`${versionLte}`}</span>, the latest release is{' '}
-                <a
-                  className="text-[--ifm-color-danger-dark] font-bold"
-                  href={`https://github.com/betaflight/betaflight/releases/tag/${versionLatest}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >{`${versionLatest}`}</a>
               </p>
             </div>
             <p>The information on this page may be outdated, please refer to the latest release notes to check for any changes. Proceed with caution.</p>

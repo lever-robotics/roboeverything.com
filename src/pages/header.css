@@ -29,7 +29,7 @@
     margin-top: 4.0rem;
     font-size: 3vw; /* Adjust font size */
     text-align: center;
-    color: #ffffff; /* Equivalent to Tailwind's text-gray-600 */
+    color: rgb(61, 61, 61); /* Adjust the color as needed */
   }
   
   /* Right section for image */
@@ -45,3 +45,33 @@
   .image-transform {
     transform: translateX(20%) translateY(0%); /* Move image partly off-screen */
   }
+
+  .title-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .by-lever {
+    float: right; /* Float the text to the right */
+    font-size: 2vw; /* Adjust the size as needed */
+    color: rgb(61, 61, 61); /* Adjust the color as needed */
+  }
+
+  .by {
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+
+  /* Gradient styling for "Robo" */
+.lever-gradient {
+  font-family: 'Comfortaa'; 
+  font-size: 25px;
+  background: var(--ifm-color-primary-dark);
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.L {
+  font-size: 25px;
+  font-weight: bold;
+}

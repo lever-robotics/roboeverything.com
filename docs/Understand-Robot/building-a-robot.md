@@ -25,5 +25,5 @@ These robots can be simple and very rewarding to start a good foundation of robo
 
 If you are experienced with a background of these robots these tutorials are built to learn the next phase of robotics being ROS2, a open source robotics framework for developing concurrent processing robots in a customizable way.
 
-
+These tutorials will teach foundational topics in robotics in a easy to understand way.
 
