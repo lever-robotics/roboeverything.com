@@ -146,6 +146,11 @@ const config = {
             label: 'Developer',
             position: 'left',
           },
+          {
+            to: '/login', // This path should match the path where your React component is rendered
+            label: 'Login',
+            position: 'left',
+          },
         ],
       },
       colorMode: {
