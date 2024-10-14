@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'marksoulier', // Usually your GitHub org/user name.
-  projectName: 'urdf_documentation', // Usually your repo name.
+  organizationName: 'lever-robotics', // Usually your GitHub org/user name.
+  projectName: 'roboeverything.com', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -174,7 +174,7 @@ const config = {
               },
               {
                 label: 'GitHub Discussions',
-                href: 'https://github.com/marksoulier/urdf_documentation/issues',
+                href: 'https://github.com/lever-robotics/roboeverything.com/issues',
               },
             ],
           },
@@ -183,7 +183,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/marksoulier/URDF_Creator',
+                href: 'https://github.com/lever-robotics/roboeverything.com',
               },
             ],
           },
