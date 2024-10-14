@@ -49,14 +49,14 @@ function ApplicationAdvertise() {
           Build robot models effortlessly and free with URDF Creator.
         </p>
         <div className={styles.buttons}>
-          <Link className="button button--lg" to="https://marksoulier.github.io/URDF_creator/">
+          <Link className="button button--lg" to="https://lever-robotics.github.io/URDF_creator/">
             Go to App
           </Link>
         </div>
       </div>
       {/* Right Section: Image with rounded container */}
       <div className={styles.imageSection}>
-      <Link to="https://marksoulier.github.io/URDF_creator/">
+      <Link to="https://lever-robotics.github.io/URDF_creator/">
         <div className={styles.imageContainer}>
           <img
             src="img/tool.png" // Replace with your image path
